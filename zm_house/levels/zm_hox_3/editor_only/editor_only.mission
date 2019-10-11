@@ -1,0 +1,33 @@
+<generic_scriptdata type="table">
+	<entry key="editor_only" type="table">
+		<entry key="activate_on_parsed" type="boolean" value="false"/>
+		<entry key="continent" type="string" value="editor_only"/>
+		<entry key="elements" type="table">
+			<entry index="1" type="table">
+				<entry key="class" type="string" value="ElementInstanceInputEvent"/>
+				<entry key="editor_name" type="string" value="fix_weird_closet"/>
+				<entry key="id" type="number" value="200000"/>
+				<entry key="module" type="string" value="CoreElementInstance"/>
+				<entry key="script" type="string" value="editor_only"/>
+				<entry key="values" type="table">
+					<entry key="base_delay" type="number" value="0"/>
+					<entry key="enabled" type="boolean" value="true"/>
+					<entry key="event_list" type="table">
+					</entry>
+					<entry key="execute_on_startup" type="boolean" value="true"/>
+					<entry key="on_executed" type="table">
+					</entry>
+					<entry key="position" type="vector3" value="413.548 -50.8883 4102.5"/>
+					<entry key="rotation" type="quaternion" value="0 0 0 1"/>
+					<entry key="trigger_times" type="number" value="0"/>
+				</entry>
+			</entry>
+		</entry>
+		<entry key="instances" type="table">
+			<entry index="1" type="string" value="hox_estate_security_room_003"/>
+			<entry index="2" type="string" value="hox_estate_security_room_004"/>
+			<entry index="3" type="string" value="hox_estate_closet_003"/>
+		</entry>
+		<entry key="name" type="string" value="editor_only"/>
+	</entry>
+</generic_scriptdata>
