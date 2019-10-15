@@ -346,6 +346,7 @@ function WDUManager:_get_points_amount(category, unit)
 end
 
 function WDUManager:_on_wdu_map()
+
     if Global.editor_mode then
         return true
     end
@@ -353,10 +354,11 @@ function WDUManager:_on_wdu_map()
     if not managers.job then
         return false
     end
-    
-    if managers.job:current_level_id() == "zm_cabinflesh" then
+	
+    if managers.job:current_contact_id() == "zombies_mode" then
         return true
     end
+
 
     return false
 end
@@ -545,6 +547,9 @@ function WDUManager:_get_weapons_in_mystery_box()
 		"wpn_fps_smg_p90",
 		"wpn_fps_smg_thompson",
         "wpn_fps_smg_tec9",
+        "wpn_fps_smg_schakal",
+        "wpn_fps_smg_erma",
+		"wpn_fps_pis_lemming",
 		"wpn_fps_pis_deagle",
 		"wpn_fps_pis_rage",
         "wpn_fps_pis_1911",
@@ -557,6 +562,8 @@ function WDUManager:_get_weapons_in_mystery_box()
 		"wpn_fps_lmg_hk21",
 		"wpn_fps_lmg_m249",
         "wpn_fps_lmg_par",
+		"wpn_fps_shot_m37",
+		"wpn_fps_shot_r870",
         "wpn_fps_sho_deamon",
 		"wpn_fps_sho_striker",
 		"wpn_fps_shot_b682",
@@ -850,7 +857,7 @@ Hooks:Add("NetworkReceivedData", "NetworkReceivedData_WDUManager_Sync", function
 
         managers.wdu:_element_play_sound({
             name = "play_shadow_spook",
-            custom_dir = "units/pd2_mod_zombies/zm_enemy/shadow",
+            custom_dir = "units/pd2_mod_zombies/sounds/zm_enemy/shadow",
             file_name = "zm_ene_shadow_scream_01.ogg",
             is_loop = false,
             is_relative = false,

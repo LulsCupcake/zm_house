@@ -1,4 +1,4 @@
-local Path = zm_house_hox.ModPath
+local Path = zm_testing.ModPath
 
 dofile(Path .. "hooks/ElementWeaponSwitch.lua")
 dofile(Path .. "hooks/ElementPointChecker.lua")
