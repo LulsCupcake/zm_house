@@ -1,0 +1,7 @@
+<unit type="bor" slot="1">
+	<object file="units/pd2_dlc_born/props/bor_prop_garage_toolbox/bor_prop_garage_toolbox" />
+	<extensions>		
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" />
+	</extensions>
+</unit>

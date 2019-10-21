@@ -59,29 +59,30 @@
 			<hook file="ZM_NarrativeTweakData.lua" source_file="lib/tweak_data/narrativetweakdata"/>
 		</hooks>
 		<include directory="levels/zm_hox_3">
-			<file file="world.world" type="generic_xml"/>
-			<file file="continents.continents" type="custom_xml"/>
-			<file file="mission.mission" type="custom_xml"/>
-			<file file="nav_manager_data.nav_data" type="generic_xml"/>
-			<file file="world_sounds.world_sounds" type="generic_xml"/>
-			<file file="world_cameras.world_cameras" type="custom_xml"/>
-			<file file="house_group/house_group.continent" type="custom_xml"/>
-			<file file="house_group/house_group.mission" type="generic_xml"/>
-			<file file="mockup/mockup.continent" type="custom_xml"/>
-			<file file="mockup/mockup.mission" type="generic_xml"/>
-			<file file="world/world.continent" type="custom_xml"/>
-			<file file="world/world.mission" type="generic_xml"/>
-			<file file="editor_only/editor_only.continent" type="custom_xml"/>
-			<file file="editor_only/editor_only.mission" type="generic_xml"/>
-			<file file="lights/lights.continent" type="custom_xml"/>
-			<file file="lights/lights.mission" type="generic_xml"/>
-			<file file="terrain/terrain.continent" type="custom_xml"/>
-			<file file="terrain/terrain.mission" type="generic_xml"/>
-			<file file="terrain02/terrain02.continent" type="custom_xml"/>
-			<file file="terrain02/terrain02.mission" type="generic_xml"/>
-			<file file="art/art.continent" type="custom_xml"/>
-			<file file="art/art.mission" type="generic_xml"/>
-			<file file="cover_data.cover_data" type="custom_xml"/>
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="house_group/house_group.continent" type="binary"/>
+			<file file="house_group/house_group.mission" type="binary"/>
+			<file file="mockup/mockup.continent" type="binary"/>
+			<file file="mockup/mockup.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="lights/lights.continent" type="binary"/>
+			<file file="lights/lights.mission" type="binary"/>
+			<file file="terrain/terrain.continent" type="binary"/>
+			<file file="terrain/terrain.mission" type="binary"/>
+			<file file="terrain02/terrain02.continent" type="binary"/>
+			<file file="terrain02/terrain02.mission" type="binary"/>
+			<file file="art/art.continent" type="binary"/>
+			<file file="art/art.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/zm_house.environment" type="custom_xml"/>
 		</include>
 		<packages>
 			<value_node value="packages/narr_hvh"/>
@@ -119,6 +120,7 @@
 					<sound id="zm_gen_magic_interact" path="zm_gen_magic_interact.ogg"/>
 					<sound id="zm_gen_magic_loop" path="zm_gen_magic_loop.ogg"/>
 					<sound id="zm_gen_electricity_short" path="zm_gen_electricity_short.ogg"/>
+					<sound id="zm_gen_ching" path="zm_gen_ching.ogg"/>
 				</sounds>
 				<sounds directory="zm_power_ups">
 					<sound id="zm_pwrup_float_spawn" path="zm_pwrup_float_spawn.ogg"/>
@@ -624,6 +626,58 @@
 			</mod>
 		</script_data_mods>
 	</level>
+	<level ai_group_type="zombie" id="zm_hox_estate_window" max_bags="54">
+		<add file="levels/zm_hox_estate_window/add.xml"/>
+		<assets>
+			<asset name="perk_mechanics"/>
+		</assets>
+		<include directory="levels/zm_hox_estate_window">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="custom_xml"/>
+			<file file="editor_only/editor_only.mission" type="generic_xml"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="custom_xml"/>
+		</include>
+		<packages/>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<level ai_group_type="zombie" id="zm_hox_estate_window_arched" max_bags="54">
+		<add file="levels/zm_hox_estate_window_arched/add.xml"/>
+		<assets>
+			<asset name="perk_mechanics"/>
+		</assets>
+		<include directory="levels/zm_hox_estate_window_arched">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="editor_only/editor_only.continent" type="binary"/>
+			<file file="editor_only/editor_only.mission" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
 	<AddFiles file="dynamic_manager.xml"/>
 	<Hooks directory="hooks">
 		<hook file="UpgradesTweakData.lua" source_file="lib/tweak_data/upgradestweakdata"/>
@@ -656,6 +710,8 @@
 	<narrative contact="zombies_mode" icon="units/pd2_mod_zmhallow/gui/icons/zm_facility_icon" id="zm_house">
 		<chain>
 			<table level_id="zm_hox_3" type="d" type_id="heist_type_assault"/>
+			<table level_id="zm_hox_estate_window" type="d" type_id="heist_type_assault"/>
+			<table level_id="zm_hox_estate_window_arched" type="d" type_id="heist_type_assault"/>
 		</chain>
 		<contract_cost>
 			<value_node value="0"/>

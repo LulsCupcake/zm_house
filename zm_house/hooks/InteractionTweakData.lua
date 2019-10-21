@@ -54,7 +54,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 1000,
 		action_text_id = "zm_opening_path",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		timer = 0.5
 	}
 	
@@ -70,8 +70,9 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 500,
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
+		sound_done = "zm_perk_bought",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -85,7 +86,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -98,7 +99,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -110,7 +111,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 0,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -123,7 +124,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -136,7 +137,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -149,7 +150,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -162,7 +163,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -175,7 +176,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -188,7 +189,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -201,7 +202,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -214,7 +215,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -227,7 +228,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -240,7 +241,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5
 	}
@@ -253,7 +254,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5,
 	}
@@ -266,7 +267,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5,
 	}
@@ -279,7 +280,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		stay_active = true,
 		action_text_id = "zm_buy_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 0.5,
 	}
@@ -290,7 +291,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 5000,
 		action_text_id = "zm_upgrade_weapon",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_ching",
 		axis = "y",
 		timer = 4,
 	}
@@ -301,7 +302,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 1500,
 		action_text_id = "zm_opening_path",
 		start_active = false,
-		sound_done = "cft_hose_cancel",
+		sound_done = "zm_gen_door_bought1",
 		timer = 1.5,
 	}
 	
@@ -311,7 +312,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 1250,
 		action_text_id = "zm_opening_path",
 		start_active = false,
-		sound_done = "bar_bag_money",
+		sound_done = "zm_gen_door_bought2",
 		timer = 1.5,
 	}
 	
@@ -321,7 +322,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 750,
 		action_text_id = "zm_opening_path",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_door_bought3",
 		timer = 1.5,
 	}
 	
@@ -332,7 +333,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		action_text_id = "zm_opening_path",
 		start_active = false,
 		interact_distance = 500,
-		sound_done = "cft_hose_cancel",
+		sound_done = "zm_gen_door_bought3",
 		timer = 1.5,
 	}
 	
@@ -352,7 +353,7 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		points_cost = 1000,
 		action_text_id = "zm_opening_path",
 		start_active = false,
-		sound_done = "bar_bag_money_cancel",
+		sound_done = "zm_gen_door_bought2",
 		timer = 1.5,
 	}
 

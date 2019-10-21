@@ -123,7 +123,7 @@ function WDUManager:_init_new_player(data)
     end
 
     self:_set_player_name(data.id, data.name)
-    self:_set_start_money(data.id, 500)
+    self:_set_start_money(data.id, 99999999999)
 end
 
 function WDUManager:_number_of_players()
@@ -443,7 +443,7 @@ function WDUManager:_destroy_source(id)
 end
 
 function WDUManager:_get_mod_path()
-    return zm_testing.ModPath
+    return zm_house_hox.ModPath
 end
 
 function WDUManager:_setup_video_panel()
