@@ -3,59 +3,26 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 	self.pick_lock_hard_no_skill.timer = 7
 	
 
-	self.zm_call_elevator = {
-		zm_interaction = true,
-		zm_elevator = true,
-		points_cost = 250,
+	self.muriatic_acid = {
+		icon = "develop",
+		text_id = "take_battery",
 		start_active = false,
-		interact_distance = 125,
-		timer = 0.5
+		interact_distance = 225,
+		special_equipment_block = "acid"
 	}
-	
-	
-	self.zm_unlock_elevator = {
-		zm_interaction = true,
-		zm_elevator = true,
-		points_cost = 750,
+	self.caustic_soda = {
+		icon = "develop",
+		text_id = "take_body",
 		start_active = false,
-		interact_distance = 125,
-		timer = 0.5
+		interact_distance = 225,
+		special_equipment_block = "caustic_soda"
 	}
-	
-	self.zm_free_points_25 = {
-		zm_interaction = true,
-		points_cost = -25,
-		text_id = "zm_activate_song_invisible",
-		action_text_id = "zm_activate_song_invisible",
+	self.hydrogen_chloride = {
+		icon = "develop",
+		text_id = "take_blade",
 		start_active = false,
-		interact_distance = 75,
-		axis = "y"
-	}
-	
-	self.zm_free_points_1000 = {
-		zm_interaction = true,
-		points_cost = -1000,
-		action_text_id = "zm_buy_weapon",
-		start_active = false,
-		axis = "y"
-	}
-	
-	self.zm_free_points_dev = {
-		zm_interaction = true,
-		points_cost = -500000,
-		action_text_id = "zm_buy_weapon",
-		start_active = false,
-		axis = "y"
-	}
-	
-	self.zm_trap_sentrygun = {
-		zm_interaction = true,
-		zm_trap = true,
-		points_cost = 1000,
-		action_text_id = "zm_opening_path",
-		start_active = false,
-		sound_done = "zm_gen_ching",
-		timer = 0.5
+		interact_distance = 225,
+		special_equipment_block = "hydrogen_chloride"
 	}
 	
 	
