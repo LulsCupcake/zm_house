@@ -11,6 +11,12 @@
 	"hud_saw_battery" : "Part Aquired : Saw battery",
 	"hud_saw_blade" : "Part Aquired : Saw blade",
 	"hud_saw_body" : "Part Aquired : Saw body",
+	"add_battery" : "Press [$BTN_INTERACT] to add the Saw battery",
+	"add_blade" : "Press [$BTN_INTERACT] to add the Saw blade",
+	"add_body" : "Press [$BTN_INTERACT] to add the Saw body",
+	"no_battery" : "You don't have a Saw battery",
+	"no_blade" : "You don't have a Saw blade",
+	"no_body" : "You don't have a Saw body",
 	
 	"zm_perk_mechanics":"Perks",
 	

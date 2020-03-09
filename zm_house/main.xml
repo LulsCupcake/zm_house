@@ -99,6 +99,11 @@
 			<value_node value="levels/narratives/bain/revenge/house_group/house_group"/>
 			<value_node value="levels/narratives/bain/revenge/mockup/mockup"/>
 			<value_node value="levels/narratives/bain/revenge/art/art"/>
+			<value_node value="levels/instances/unique/des/des_crate_002/world/world"/>
+			<value_node value="levels/instances/unique/hox_estate_window_arched/world/world"/>
+			<value_node value="levels/instances/unique/hox_estate_window/world/world"/>
+			<value_node value="levels/instances/unique/hox_estate_outer_door/world/world"/>
+			<value_node value="levels/narratives/bain/help/collision/collision"/>
 		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
@@ -142,7 +147,7 @@
 					<sound id="zm_perk_hum" path="zm_perk_hum.ogg" relative="true"/>
 					<sound id="zm_perk_song_deadshot" path="zm_perk_song_deadshot.ogg" relative="true"/>
 					<sound id="zm_perk_song_doubletap" path="zm_perk_song_doubletap.ogg" relative="true"/>
-					<sound id="zm_perk_song_pack_a_punch" path="zm_perk_song_pack_a_punch.ogg" relative="true"/>
+					<sound id="zm_perk_song_pap_sting" path="zm_perk_song_pack_a_punch.ogg" relative="true"/>
 					<sound id="zm_perk_song_staminup" path="zm_perk_song_staminup.ogg" relative="true"/>
 					<sound id="zm_perk_song_speedcola" path="zm_perk_song_speedcola.ogg" relative="true"/>
 					<sound id="zm_perk_song_speedcola_sting" path="zm_perk_song_speedcola_sting.ogg" relative="true"/>
@@ -638,14 +643,14 @@
 			<file file="nav_manager_data.nav_data" type="binary"/>
 			<file file="world_sounds.world_sounds" type="binary"/>
 			<file file="world_cameras.world_cameras" type="binary"/>
-			<file file="editor_only/editor_only.continent" type="custom_xml"/>
-			<file file="editor_only/editor_only.mission" type="generic_xml"/>
 			<file file="world/world.continent" type="binary"/>
 			<file file="world/world.mission" type="binary"/>
 			<file file="cover_data.cover_data" type="binary"/>
 			<file file="environments/default.environment" type="custom_xml"/>
 		</include>
-		<packages/>
+		<packages>
+			<value_node value="levels/instances/unique/hox_estate_window/world/world"/>
+		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
 				<options merge_mode="add" mode="add"/>
@@ -664,20 +669,118 @@
 			<file file="nav_manager_data.nav_data" type="binary"/>
 			<file file="world_sounds.world_sounds" type="binary"/>
 			<file file="world_cameras.world_cameras" type="binary"/>
-			<file file="editor_only/editor_only.continent" type="binary"/>
-			<file file="editor_only/editor_only.mission" type="binary"/>
 			<file file="world/world.continent" type="binary"/>
 			<file file="world/world.mission" type="binary"/>
 			<file file="cover_data.cover_data" type="binary"/>
 			<file file="environments/default.environment" type="binary"/>
 		</include>
-		<packages/>
+		<packages>
+			<value_node value="levels/instances/unique/hox_estate_window_arched/world/world"/>
+		</packages>
 		<script_data_mods directory="scriptdata">
 			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
 				<options merge_mode="add" mode="add"/>
 			</mod>
 		</script_data_mods>
 	</level>
+	<instance id="zm_hox_estate_window">
+		<add file="levels/zm_hox_estate_window/add.xml"/>
+		<include directory="levels/zm_hox_estate_window">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<level ai_group_type="zombie" id="zm_hox_estate_outer_door" max_bags="54">
+		<add file="levels/zm_hox_estate_outer_door/add.xml"/>
+		<include directory="levels/zm_hox_estate_outer_door">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="binary"/>
+		</include>
+		<packages>
+			<value_node value="levels/instances/unique/hox_estate_outer_door/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<level ai_group_type="zombie" id="zm_saw" max_bags="54">
+		<add file="levels/zm_saw/add.xml"/>
+		<hooks directory="hooks">
+			<hook file="ElementSpawnEnemyDummy.lua" source_file="lib/managers/mission/elementspawnenemydummy"/>
+			<hook file="EquipmentsTweakdata.lua" source_file="lib/tweak_data/equipmentstweakdata"/>
+			<hook file="HUDIconsTweakdata.lua" source_file="lib/tweak_data/hudiconstweakdata"/>
+			<hook file="InteractionTweakData.lua" source_file="lib/tweak_data/interactiontweakdata"/>
+		</hooks>
+		<include directory="levels/zm_saw">
+			<file file="world.world" type="binary"/>
+			<file file="continents.continents" type="binary"/>
+			<file file="mission.mission" type="binary"/>
+			<file file="nav_manager_data.nav_data" type="binary"/>
+			<file file="world_sounds.world_sounds" type="binary"/>
+			<file file="world_cameras.world_cameras" type="binary"/>
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+			<file file="cover_data.cover_data" type="binary"/>
+			<file file="environments/default.environment" type="binary"/>
+		</include>
+		<packages>
+			<value_node value="levels/instances/unique/sub_sewer_sidespawn/world/world"/>
+			<value_node value="levels/instances/unique/hvh/hvh_chance/world/world"/>
+		</packages>
+		<script_data_mods directory="scriptdata">
+			<mod replacement="objectives.objective" replacement_type="custom_xml" target_ext="objective" target_path="gamedata/objectives">
+				<options merge_mode="add" mode="add"/>
+			</mod>
+		</script_data_mods>
+	</level>
+	<instance id="zm_saw">
+		<add file="levels/zm_saw/add.xml"/>
+		<include directory="levels/zm_saw">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_hox_estate_outer_door">
+		<add file="levels/zm_hox_estate_outer_door/add.xml"/>
+		<include directory="levels/zm_hox_estate_outer_door">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_hox_estate_window_arched">
+		<add file="levels/zm_hox_estate_window_arched/add.xml"/>
+		<include directory="levels/zm_hox_estate_window_arched">
+			<file file="world/world.continent" type="binary"/>
+			<file file="world/world.mission" type="binary"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
+	<instance id="zm_gameplay_controller">
+		<add file="levels/zm_gameplay_controller/add.xml"/>
+		<include directory="levels/zm_gameplay_controller">
+			<file file="world/world.continent" type="custom_xml"/>
+			<file file="world/world.mission" type="generic_xml"/>
+		</include>
+		<packages/>
+		<script_data_mods/>
+	</instance>
 	<AddFiles file="dynamic_manager.xml"/>
 	<Hooks directory="hooks">
 		<hook file="UpgradesTweakData.lua" source_file="lib/tweak_data/upgradestweakdata"/>
@@ -698,20 +801,10 @@
 		<value_node value="ElementWave"/>
 	</MissionElements>
 	<contact assets_gui="guis/dlcs/the_bomb/guis/preload_contact_the_butcher" hidden="false" id="zombies_mode" name_id="zombies_mode_name" package="packages/contact_the_butcher"/>
-	<instance id="zm_gameplay_controller">
-		<add file="levels/zm_gameplay_controller/add.xml"/>
-		<include directory="levels/zm_gameplay_controller">
-			<file file="world/world.continent" type="custom_xml"/>
-			<file file="world/world.mission" type="generic_xml"/>
-		</include>
-		<packages/>
-		<script_data_mods/>
-	</instance>
 	<narrative contact="zombies_mode" icon="units/pd2_mod_zmhallow/gui/icons/zm_facility_icon" id="zm_house">
 		<chain>
 			<table level_id="zm_hox_3" type="d" type_id="heist_type_assault"/>
-			<table level_id="zm_hox_estate_window" type="d" type_id="heist_type_assault"/>
-			<table level_id="zm_hox_estate_window_arched" type="d" type_id="heist_type_assault"/>
+			<table level_id="zm_saw" type="d" type_id="heist_type_assault"/>
 		</chain>
 		<contract_cost>
 			<value_node value="0"/>
