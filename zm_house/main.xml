@@ -10,6 +10,7 @@
 			<asset name="perk_mechanics"/>
 		</assets>
 		<hooks directory="hooks">
+			<hook file="MusicManager.lua" source_file="lib/managers/MusicManager"/>
 			<hook file="Setup.lua" source_file="lib/setups/gamesetup"/>
 			<hook file="AssetsTweakData.lua" source_file="lib/tweak_data/assetstweakdata"/>
 			<hook file="CharacterTweakData.lua" source_file="lib/tweak_data/charactertweakdata"/>
