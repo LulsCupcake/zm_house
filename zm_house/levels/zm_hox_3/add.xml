@@ -1,4 +1,13 @@
 <table directory="assets">
+	<unit_load name="units/pd2_mod_zombies/props/zm_shovel/shovel">
+		<cooked_physics path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<material_config path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<model path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<object path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<unit path="units/pd2_mod_zombies/props/zm_shovel/shovel"/>
+		<texture path="units/pd2_mod_zombies/props/zm_shovel/combat_df"/>
+		<texture path="units/pd2_mod_zombies/props/zm_shovel/combat_nm"/>
+	</unit_load>
 	<texture path="guis/saw_battery"/>
 	<texture path="guis/saw_body"/>
 	<texture path="guis/saw_blade"/>

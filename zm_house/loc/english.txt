@@ -23,8 +23,6 @@
 	"hud_assault_zombie" : "Zombie Assault in progress",
 	
     "zm_buy_weapon" : "Buying...",
-	"zm_hack" : "Hacking...",
-	"zm_power" : "Restarting...",
 	
 	"wpn_m1911_name" : "M1911",
     "wpn_lemming_name" : "5/7 Pistol",
@@ -72,10 +70,6 @@
 	
 	"zm_activate_song_invisible" : "",
 	
-	"zm_use_teleporter" : "Using teleporter...",
-	"zm_teleporter" : "Hold $BTN_INTERACT to use the Teleporter",
-	"zm_teleporter_cooling_down" : "Teleporter is cooling down",
-	
 	"zm_upgrade_weapon" : "Upgrading a weapon",
 	"zm_opening_path" : "Opening path",
 	"zm_buy_weapon" : "Buying a weapon",
@@ -90,6 +84,8 @@
 	
 	"zm_broken_arrow_perks_name" : "Available Perks",
     "zm_broken_arrow_perks_2_name" : "Available Perks (continued)",
+	
+	"zm_car" : "Opening gate...",
 	
 	"menu_jukebox_track_zm_hox_3" : "with your little shovel"
 }

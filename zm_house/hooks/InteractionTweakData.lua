@@ -378,16 +378,8 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 	self.zm_activate_song_invisible = {
 		text_id = "zm_activate_song_invisible",
 		action_text_id = "zm_buy_weapon",
+		sound_done = "zm_gen_magic_interact",
 		start_active = false,
-		sound_done = "bar_steal_painting",
-		interact_distance = 250
-	}
-	
-	self.zm_invisible = {
-		text_id = "zm_activate_song_invisible",
-		start_active = false,
-		action_text_id = "zm_buy_weapon",
-		special_equipment_block = "gas",
 		interact_distance = 250
 	}
 
@@ -455,108 +447,6 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		sound_done = "zm_perk_bought",
 		special_equipment_block = "perk_quickrevive"
 	}
-
-	self.zm_perk_deadshot = {
-		zm_interaction = true,
-		points_cost = 4000,
-		perk = "Dead Shot",
-		is_perk_interaction = true,
-		action_text_id = "zm_buy_perk",
-		start_active = false,
-		axis = "y",
-		timer = 0.5,
-		sound_done = "zm_perk_bought",
-		special_equipment_block = "perk_deadshot"
-	}
-
-	self.zm_need_authorization = {
-		text_id = "zm_need_authorization",
-		special_equipment = "zm_power_on",
-		equipment_text_id = "zm_need_authorization",
-		start_active = false,
-		timer = 3
-	}
-	
-	self.zm_power_req = { 
-		text_id = "zm_teleporter",
-		action_text_id = "zm_use_teleporter",
-		start_active = false,
-		special_equipment = "zm_power_on",
-		equipment_text_id = "zm_no_power",
-	}
-	
-	self.zm_raygun_hint = { 
-		text_id = "zm_teleporter",
-		action_text_id = "zm_use_teleporter",
-		start_active = false,
-		special_equipment = "zm_power_on",
-		equipment_text_id = "zm_raygun_hint",
-	}
-	
-	self.zm_perk_stamin = {
-		zm_interaction = true,
-		points_cost = 3000,
-		perk = "Stamin' Up",
-		is_perk_interaction = true,
-		action_text_id = "zm_buy_perk",
-		start_active = false,
-		axis = "y",
-		timer = 3,	
-		sound_done = "bar_bag_money_finished",
-		special_equipment_block = "perk_staminup"
-	}
-	
-	self.zm_hack1 = {
-		zm_interaction = true,
-		hack = true,
-		text_id = "zm_secret_bunker_hack",
-		action_text_id = "zm_hack",
-		start_active = false,
-		points_cost = 1500,
-		sound_start = "bar_keyboard",
-		sound_interupt = "bar_keyboard_cancel",
-		sound_done = "bar_keyboard_finished",
-		timer = 5
-	}
-	
-	self.zm_hack2 = {
-		zm_interaction = true,
-		hack = true,
-		text_id = "zm_secret_bunker_hack",
-		action_text_id = "zm_hack",
-		start_active = false,
-		points_cost = 3000,
-		sound_start = "bar_keyboard",
-		sound_interupt = "bar_keyboard_cancel",
-		sound_done = "bar_keyboard_finished",
-		timer = 5
-	}
-	
-	self.zm_hack3 = {
-		zm_interaction = true,
-		hack = true,
-		text_id = "zm_secret_bunker_hack",
-		action_text_id = "zm_hack",
-		start_active = false,
-		points_cost = 3000,
-		sound_start = "bar_keyboard",
-		sound_interupt = "bar_keyboard_cancel",
-		sound_done = "bar_keyboard_finished",
-		timer = 5
-	}
-	
-	self.zm_hack4 = {
-		zm_interaction = true,
-		hack = true,
-		text_id = "zm_secret_bunker_hack",
-		action_text_id = "zm_hack",
-		start_active = false,
-		points_cost = 3000,
-		sound_start = "bar_keyboard",
-		sound_interupt = "bar_keyboard_cancel",
-		sound_done = "bar_keyboard_finished",
-		timer = 5
-	}
 	
 	self.zm_car = {
 		zm_interaction = true,
@@ -564,51 +454,11 @@ Hooks:PostHook(InteractionTweakData, "init", "zm_init_new_interactions", functio
 		text_id = "zm_car",
 		action_text_id = "zm_car",
 		start_active = false,
-		points_cost = 30000,
-		sound_start = "bar_cop_car",
-		sound_interupt = "bar_cop_car_cancel",
-		sound_done = "bar_cop_car_finished",
-		timer = 5
-	}
-	
-	self.zm_key = {
-		text_id = "zm_key",
-		action_text_id = "zm_keying",
-		start_active = false,
-		special_equipment = "keychain",
-		equipment_text_id = "zm_no_key",
+		points_cost = 50000,
 		sound_start = "bar_unlock_grate_door",
 		sound_interupt = "bar_unlock_grate_door_cancel",
 		sound_done = "bar_unlock_grate_door_finished",
 		timer = 5
-	}
-	
-	self.zm_gas = {
-		text_id = "zm_gas",
-		action_text_id = "zm_gassing",
-		start_active = false,
-		special_equipment = "gas",
-		equipment_text_id = "zm_no_gas",
-		equipment_consume = true,
-		sound_start = "liquid_pour",
-		sound_interupt = "liquid_pour_stop",
-		sound_done = "liquid_pour_stop",
-		timer = 10
-	}
-	
-	
-	self.zm_key_pku_doubletap = {
-		text_id = "zm_key_doubletap",
-		start_active = false
-	}
-	self.zm_key_use_doubletap = {
-		zm_interaction = true,
-		text_id = "zm_key_use_doubletap",
-		special_equipment = "key_doubletap",
-		equipment_consume = true,
-		start_active = false,
-		points_cost = 250,
-		timer = 0.5
 	}
 
 end)

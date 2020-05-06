@@ -195,8 +195,8 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 		
 		--Is a ZM Key Interaction?
 		if self._tweak_data.key then
-			text = "Hold " .. managers.localization:btn_macro("interact") .. " to start "
-			local key_type = "the car"
+			text = "Hold " .. managers.localization:btn_macro("interact") .. " to open "
+			local key_type = "the gate"
 			
 			if self._tweak_data.key then
 				hkey_type = self._tweak_data.custom_key
@@ -207,7 +207,7 @@ function BaseInteractionExt:selected(player, locator, hand_id)
 				text = text .. " [Cost : " .. cost .. "]"
 			else
 				local points_needed = cost - current_money
-				text = "You need " .. points_needed .. " more points to start the car "
+				text = "You need " .. points_needed .. " more points to open the gate "
 			end
 		end
 		
