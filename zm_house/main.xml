@@ -795,7 +795,7 @@
 		<script_data_mods/>
 	</instance>
 	<AddFiles file="dynamic_manager.xml"/>
-	<AssetUpdates id="27126" provider="modworkshop" use_local_dir="true" version="2.7"/>
+	<AssetUpdates id="27126" provider="modworkshop" use_local_dir="true" version="2.8"/>
 	<Hooks directory="hooks">
 		<hook file="DynamicResourceManager.lua" source_file="lib/managers/dynamicresourcemanager"/>
 		<hook file="ZM_ContractHudManager.lua" source_file="lib/managers/menu/items/contractbrokerheistitem"/>
